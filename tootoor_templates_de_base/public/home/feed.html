@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="fr-FR" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- ===============================================-->
+    <!--    Document Title-->
+    <!-- ===============================================-->
+    <title>ToorToor | Actualités &amp; Plateforme de mentoring</title>
+
+
+    <!-- ===============================================-->
+    <!--    Favicons-->
+    <!-- ===============================================-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicons/toortoor_logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicons/toortoor_logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicons/toortoor_logo.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/img/favicons/toortoor_logo.ico">
+    <link rel="manifest" href="../assets/img/favicons/manifest.json">
+    
+    <meta name="msapplication-TileImage" content="../assets/img/favicons/toortoor_logo.png">
+    <meta name="theme-color" content="#ffffff">
+    <script src="../assets/js/config.navbar-vertical.js"></script>
+
+
+
+    <!-- ===============================================-->
+    <!--    Stylesheets-->
+    <!-- ===============================================-->
+    <link href="../vendors/glightbox/glightbox.min.css" rel="stylesheet">
+    <link href="../vendors/plyr/plyr.css" rel="stylesheet">
+    <link href="../assets/css/theme.css" rel="stylesheet" />
+    <link href="vendors/choices/choices.min.css" rel="stylesheet" />
+
+  </head>
+
+
+  <body>
+
+    <!-- ===============================================-->
+    <!--    Main Content-->
+    <!-- ===============================================-->
+    <main class="main" id="top">
+      <div class="container">
+        <nav class="navbar navbar-light navbar-vertical navbar-expand-xl">
+          <div class="d-flex align-items-center">
+             <div class="toggle-icon-wrapper">
+              <button class="btn navbar-toggler-humburger-icon navbar-vertical-toggle" data-toggle="tooltip" data-placement="left" title="Menu"><span class="navbar-toggle-icon"><span class="toggle-line pres"></span></span></button>
+            </div><a class="navbar-brand" href="../home/feed.html" id='logo'>
+              <div class="d-flex align-items-center py-3"><img class="mr-0" src="../assets/img/favicons/toortoor_logo.png" alt="" width="40" /><span class="font-comfortaa pres font-weight-bold">ToorToor</span>
+              </div>
+            </a>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarVerticalCollapse">
+            <div class="navbar-vertical-content scrollbar">
+              <ul class="navbar-nav flex-column">
+                <li class="nav-item"><a class="nav-link" href="../home/feed.html"  role="button" aria-expanded="true" aria-controls="home">
+                    <div class="d-flex align-items-center"><span class="nav-link-icon"><span class="fas fa-list-alt pres"></span></span><span class="nav-link-text "> Actualités</span>
+                    </div>
+                  </a> 
+                </li>
+                <li class="nav-item"><a class="nav-link dropdown-indicator" href="#pages" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="pages">
+                  <div class="d-flex align-items-center"><span class="nav-link-icon"><span class="far fa-folder-open pres"></span></span><span class="nav-link-text"> Projet</span>
+                  </div>
+                </a>
+                <ul class="nav collapse show " id="pages" data-parent="#navbarVerticalCollapse">
+                  <li class="nav-item"><a class="nav-link dropdown-indicator" href="#projet" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="projet" href="" >Soummetre un projet </a>
+                    <ul class="nav collapse" id="projet" data-parent="#pages">
+                      <li class="nav-item"><a class="nav-link" href="../pages/projet_entreprise.html">Entreprise</a>
+                      </li>
+                      <li class="nav-item"><a class="nav-link" href="../pages/creer_projet.html">Personnel</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item"><a class="nav-link dropdown-indicator" href="#projets" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="projets" href="" >Projets</a>
+                    <ul class="nav collapse" id="projets" data-parent="#pages">
+                      <li class="nav-item"><a class="nav-link" href="../pages/projets.html">Projets entreprises</a>
+                      </li>
+                      <li class="nav-item"><a class="nav-link" href="../pages/projets.html"> Projets entrepreneuriat</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link dropdown-indicator" href="#event"   data-toggle="collapse" role="button" aria-expanded="true" aria-controls="event">
+                  <div class="d-flex align-items-center"><span class="nav-link-icon"><span class="far fa-calendar pres"></span></span><span class="nav-link-text"> Événements</span>
+                  </div>
+                </a>
+                <ul class="nav collapse show" id="event" data-parent="#navbarVerticalCollapse">
+                  <li class="nav-item"><a class="nav-link" href="../pages/event-create.html">Ajouter un événement </a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link" href="../pages/events.html">Événements</a>
+                  </li>
+                </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="../pages/profile.html"  role="button" aria-expanded="true" aria-controls="">
+                  <div class="d-flex align-items-center"><span class="nav-link-icon"><span class="fas fa-user pres"></span></span><span class="nav-link-text "> Profil</span>
+                  </div>
+                </a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="../pages/settings.html"  role="button" aria-expanded="true" aria-controls="">
+                  <div class="d-flex align-items-center"><span class="nav-link-icon"><span class="fas fa-user-cog pres"></span></span><span class="nav-link-text "> Paramètres</span>
+                  </div>
+                   </a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="../chat.html">
+                  <div class="d-flex align-items-center"><span class="nav-link-icon"><span class="fas fa-comments pres"></span></span><span class="nav-link-text "> Chat</span>
+                  </div>
+                  </a>
+                </li>
+                <!-- <li class="nav-item"><a class="nav-link" href="../kanban.html">
+                  <div class="d-flex align-items-center"><span class="nav-link-icon"><span class="fab fa-trello pres"></span></span><span class="nav-link-text "> Kanban</span>
+                  </div>
+                  </a>
+                </li> -->
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="content">
+          <nav class="navbar navbar-light navbar-glass navbar-top navbar-expand">
+
+            <button class="btn navbar-toggler-humburger-icon navbar-toggler mr-0 mr-sm-3" type="button" data-toggle="collapse" data-target="#navbarVerticalCollapse" aria-controls="navbarVerticalCollapse" aria-expanded="false" aria-label="Toggle Navigation"><span class="navbar-toggle-icon"><span class="toggle-line"></span></span></button>
+            <a class="navbar-brand mr-1 mr-sm-3" href="../index.html">
+              <div class="d-flex align-items-center"><img class="mr-2" src="../assets/img/favicons/toortoor_logo.png" alt="" width="40" /><span class="font-sans-serif pres font-weight-bold">ToorToor</span>
+              </div>
+            </a>
+            <ul class="navbar-nav align-items-center d-none d-lg-block">
+              <li class="nav-item">
+                <div class="search-box" data-list='{"valueNames":["title"]}'>
+                  <form class="position-relative" data-toggle="search" data-display="static">
+                    <input class="form-control search-input fuzzy-search" type="search" placeholder="Rechercher..." aria-label="Search" />
+                    <span class="fas fa-search search-box-icon"></span>
+
+                  </form>
+                  <button class="btn-close position-absolute right-0 top-50 translate-middle shadow-none p-1 mr-1 fs--2" type="button" data-dismiss="search"></button>
+                  <div class="dropdown-menu border font-base left-0 mt-2 py-0 overflow-hidden w-100">
+                    <div class="scrollbar list py-3" style="max-height: 24rem;">
+                      <h6 class="dropdown-header font-weight-medium text-uppercase px-card fs--2 pt-0 pb-2">Recently Browsed</h6><a class="dropdown-item fs--1 px-card py-1 hover-primary" href="../pages/events.html">
+                        <div class="d-flex align-items-center">
+                          <span class="fas fa-circle mr-2 text-300 fs--2"></span>
+
+                          <div class="font-weight-normal title">Pages <span class="fas fa-chevron-right mx-1 text-500 fs--2" data-fa-transform="shrink-2"></span> Events</div>
+                        </div>
+                      </a>
+                      <a class="dropdown-item fs--1 px-card py-1 hover-primary" href="../e-commerce/customers.html">
+                        <div class="d-flex align-items-center">
+                          <span class="fas fa-circle mr-2 text-300 fs--2"></span>
+
+                          <div class="font-weight-normal title">E-commerce <span class="fas fa-chevron-right mx-1 text-500 fs--2" data-fa-transform="shrink-2"></span> Customers</div>
+                        </div>
+                      </a>
+
+                      <hr class="bg-200" />
+                      <h6 class="dropdown-header font-weight-medium text-uppercase px-card fs--2 pt-0 pb-2">Suggested Filter</h6><a class="dropdown-item px-card py-1 fs-0" href="../e-commerce/customers.html">
+                        <div class="d-flex align-items-center"><span class="badge font-weight-medium text-decoration-none mr-2 badge-soft-warning">customers:</span>
+                          <div class="flex-1 fs--1 title">All customers list</div>
+                        </div>
+                      </a>
+                      <a class="dropdown-item px-card py-1 fs-0" href="../pages/events.html">
+                        <div class="d-flex align-items-center"><span class="badge font-weight-medium text-decoration-none mr-2 badge-soft-success">events:</span>
+                          <div class="flex-1 fs--1 title">Latest events in current month</div>
+                        </div>
+                      </a>
+                      <a class="dropdown-item px-card py-1 fs-0" href="../e-commerce/product-grid.html">
+                        <div class="d-flex align-items-center"><span class="badge font-weight-medium text-decoration-none mr-2 badge-soft-info">products:</span>
+                          <div class="flex-1 fs--1 title">Most popular products</div>
+                        </div>
+                      </a>
+
+                      <hr class="bg-200" />
+                      <h6 class="dropdown-header font-weight-medium text-uppercase px-card fs--2 pt-0 pb-2">Files</h6><a class="dropdown-item px-card py-2" href="#!">
+                        <div class="d-flex align-items-center">
+                          <div class="file-thumbnail mr-2"><img class="border h-100 w-100 fit-cover rounded-lg" src="../assets/img/products/3-thumb.png" alt="" /></div>
+                          <div class="flex-1">
+                            <h6 class="mb-0 title">iPhone</h6>
+                            <p class="fs--2 mb-0"><span class="font-weight-semi-bold">Antony</span><span class="font-weight-medium text-600 ml-2">27 Sep at 10:30 AM</span></p>
+                          </div>
+                        </div>
+                      </a>
+                      <a class="dropdown-item px-card py-2" href="#!">
+                        <div class="d-flex align-items-center">
+                          <div class="file-thumbnail mr-2"><img class="img-fluid" src="../assets/img/icons/zip.png" alt="" /></div>
+                          <div class="flex-1">
+                            <p class="fs--2 mb-0"><span class="font-weight-semi-bold">John</span><span class="font-weight-medium text-600 ml-2">30 Sep at 12:30 PM</span></p>
+                          </div>
+                        </div>
+                      </a>
+                      <hr class="bg-200" />
+                      <h6 class="dropdown-header font-weight-medium text-uppercase px-card fs--2 pt-0 pb-2">Members</h6><a class="dropdown-item px-card py-2" href="../pages/profile.html">
+                        <div class="d-flex align-items-center">
+                          <div class="avatar avatar-l status-online mr-2">
+                            <img class="rounded-circle" src="../assets/img/team/user1.jpeg" alt="" />
+
+                          </div>
+                          <div class="flex-1">
+                            <h6 class="mb-0 title">Anna Karinina</h6>
+                            <p class="fs--2 mb-0">Technext Limited</p>
+                          </div>
+                        </div>
+                      </a>
+                      <a class="dropdown-item px-card py-2" href="../pages/profile.html">
+                        <div class="d-flex align-items-center">
+                          <div class="avatar avatar-l mr-2">
+                            <img class="rounded-circle" src="../assets/img/team/user10.jpeg" alt="" />
+
+                          </div>
+                          <div class="flex-1">
+                            <h6 class="mb-0 title">Antony Hopkins</h6>
+                            <p class="fs--2 mb-0">Brain Trust</p>
+                          </div>
+                        </div>
+                      </a>
+                      <a class="dropdown-item px-card py-2" href="../pages/profile.html">
+                        <div class="d-flex align-items-center">
+                          <div class="avatar avatar-l mr-2">
+                            <img class="rounded-circle" src="../assets/img/team/user2.jpeg" alt="" />
+
+                          </div>
+                          <div class="flex-1">
+                            <h6 class="mb-0 title">Emma Watson</h6>
+                            <p class="fs--2 mb-0">Google</p>
+                          </div>
+                        </div>
+                      </a>
+
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <ul class="navbar-nav navbar-nav-icons ml-auto flex-row align-items-center">
+              <li class="nav-item dropdown">
+                <a class="nav-link notification-indicator notification-indicator-warning px-0 icon-indicator" id="navbarDropdownNotification" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="fas fa-bell fs-4" data-fa-transform="shrink-6"></span></a>
+                <div class="dropdown-menu dropdown-menu-right dropdown-menu-card" aria-labelledby="navbarDropdownNotification">
+                  <div class="card card-notification shadow-none">
+                    <div class="card-header">
+                      <div class="row justify-content-between align-items-center">
+                        <div class="col-auto">
+                          <h6 class="card-header-title mb-0">Notifications</h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="list-group list-group-flush font-weight-normal fs--1">
+                      <div class="list-group-title border-bottom">Nouveau</div>
+                      <div class="list-group-item">
+                        <a class="notification notification-flush notification-unread" href="#!">
+                          <div class="notification-avatar">
+                            <div class="avatar avatar-2xl mr-3">
+                              <img class="rounded-circle" src="../assets/img/team/user4.png" alt="" />
+
+                            </div>
+                          </div>
+                          <div class="notification-body">
+                            <p class="mb-1"><strong>Jeanne Ndour</strong> a répondu à votre commentaire : "Hello world 😍"</p>
+                            <span class="notification-time"><span class="mr-1" role="img" aria-label="Emoji">💬</span>Maintenant</span>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="list-group-item">
+                        <a class="notification notification-flush notification-unread" href="#!">
+                          <div class="notification-avatar">
+                            <div class="avatar avatar-2xl mr-3">
+                              <div class="avatar-name rounded-circle"><span>AB</span></div>
+                            </div>
+                          </div>
+                          <div class="notification-body">
+                            <p class="mb-1"><strong>Astou Badji</strong> a réagi à <strong>Maty Gueye</strong> statut</p>
+                            <span class="notification-time"><span class="mr-1 fab fa-gratipay text-danger"></span>9hr</span>
+
+                          </div>
+                        </a>
+
+                      </div>
+                      
+                    </div>
+                    <div class="card-footer text-center border-top"><a class="card-link d-block" href="pages/notifications.html">Voir tout</a></div>
+                  </div>
+                </div>
+
+              </li>
+              <li class="nav-item dropdown"><a class="nav-link pr-0" id="navbarDropdownUser" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <div class="avatar avatar-xl">
+                    <img class="rounded-circle" src="../assets/img/team/user6.jpeg" alt="" />
+
+                  </div>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right py-0" aria-labelledby="navbarDropdownUser">
+                  <div class="bg-white rounded-lg py-2">
+                    <a class="dropdown-item" href="../pages/profile.html">Profil &amp; compte</a>
+                    <a class="dropdown-item" href="../pages/creer_projet.html">Projets</a>
+
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="../pages/settings.html">Paramètres</a>
+                    <a class="dropdown-item" href="../authentication/basic/logout.html">Déconnexion</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </nav>
+          <div class="row g-0">
+            <div class="col-lg-8 pr-lg-2">
+              <div class="card mb-3">
+                <div class="card-header bg-light overflow-hidden">
+                  <div class="d-flex align-items-center">
+                    <div class="avatar avatar-m">
+                      <img class="rounded-circle" src="../assets/img/team/user6.jpeg" alt="" />
+
+                    </div>
+                    <div class="flex-1 ml-2">
+                      <h5 class="mb-0 fs-0">Créer un post</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body p-0">
+                  <form>
+                    <textarea class="shadow-none form-control border-0 rounded-0 resize-none px-card" placeholder="De quoi voulez-vous parler?" rows="4"></textarea>
+                    <div class="row g-0 justify-content-between mt-3 px-card pb-3">
+                      <div class="col">
+                        <button class="btn btn-light btn-sm rounded-pill shadow-none d-inline-flex align-items-center fs--1 mb-0 mr-1" type="button"><img class="cursor-pointer" src="../assets/img/illustrations/image.svg" width="17" alt="" /><span class="ml-2 d-none d-md-inline-block">Photo</span></button>
+                        <button class="btn btn-light btn-sm rounded-pill shadow-none d-inline-flex align-items-center fs--1 mr-1" type="button"><img class="cursor-pointer" src="../assets/img/illustrations/calendar.svg" width="17" alt="" /><span class="ml-2 d-none d-md-inline-block">Événements</span></button>
+                        <!-- <button class="btn btn-light btn-sm rounded-pill shadow-none d-inline-flex align-items-center fs--1 mr-1" type="button"><img class="cursor-pointer" src="../assets/img/illustrations/location.svg" width="17" alt="" /><span class="ml-2 d-none d-md-inline-block text-nowrap">Check in</span></button> -->
+                      </div>
+                      <div class="col-auto">
+                        <!-- <div class="dropdown d-inline-block mr-1">
+                          <button class="btn btn-sm dropdown-toggle px-1" id="dropdownMenuButton" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="fas fa-globe-americas"></span></button>
+                          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton"><a class="dropdown-item" href="#">Public</a><a class="dropdown-item" href="#">Private</a><a class="dropdown-item" href="#">Draft</a></div>
+                        </div> -->
+                        <button class="btn btn-warning btn-sm px-4 px-sm-5" type="submit">Partager</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="card mb-3">
+                <div class="card-header bg-light">
+                  <div class="row justify-content-between">
+                    <div class="col">
+                      <div class="d-flex">
+                        <div class="avatar avatar-2xl status-online">
+                          <img class="rounded-circle" src="../assets/img/team/user9.jpeg" alt="" />
+
+                        </div>
+                        <div class="flex-1 align-self-center ml-2">
+                          <p class="mb-1 lh-1"><a class="font-weight-semi-bold pres" href="../pages/profile.html">Saliou Pene</a> a partagé un <a class='pres' href="#!">album</a></p>
+                          <p class="mb-0 fs--1">11 hrs &bull; Consett, UK &bull; <span class="fas fa-globe-americas"></span></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-auto">
+                      <div class="dropdown font-sans-serif">
+                        <button class="btn btn-sm dropdown-toggle p-1 dropdown-caret-none" type="button" id="post-album-action" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="fas fa-ellipsis-h fs--1"></span></button>
+                        <div class="dropdown-menu dropdown-menu-right py-3" aria-labelledby="post-album-action"><a class="dropdown-item" href="#!">Ajouter</a><a class="dropdown-item" href="#!">Ne plus suivre</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body overflow-hidden">
+                  <p>le Sénégal regorge d'endroits touristiques qui sont tout simplement magnifique. Le tourisme doit être valoriser et ça commence
+                    par nous citoyen. 
+                  </p>
+                  <div class="row mx-n1">
+                    <div class="col-6 p-1"><a href="../assets/img/gallery/Feed2.jpeg" data-gallery="gallery-1"><img class="img-fluid rounded" src="../assets/img/gallery/Feed2.jpeg" alt="" /></a></div>
+                    <div class="col-6 p-1"><a href="../assets/img/gallery/Feed3.jpeg" data-gallery="gallery-1"><img class="img-fluid rounded" src="../assets/img/gallery/Feed3.jpeg" alt="" /></a></div>
+                    <div class="col-6 p-1"><a href="../assets/img/gallery/Feed8.jpeg" data-gallery="gallery-1"><img class="img-fluid rounded" src="../assets/img/gallery/Feed8.jpeg" alt="" /></a></div>
+                    <div class="col-6 p-1"><a href="../assets/img/gallery/Feed10.jpeg" data-gallery="gallery-1"><img class="img-fluid rounded" src="../assets/img/gallery/Feed10.jpeg" alt="" /></a></div>
+                  </div>
+                </div>
+                <div class="card-footer bg-light pt-0">
+                  <div class="border-bottom border-200 fs--1 py-3"><a class="text-700 link-danger" href="#!">345 J'aimes</a> &bull; <a class="text-700 pres" href="#!">34 Commentaires</a>
+                  </div>
+                  <div class="row g-0 font-weight-semi-bold text-center py-2 fs--1">
+                    <div class="col-auto"> <button class='btn btn-light mr-1 mb-1'> <span class="far fa-heart"></span> Aimer</button></div>
+                    <div class="col-auto"> <button class='btn btn-light mr-1 mb-1'> <span class="far fa-comment"></span> Commenter</button></div>
+                    <div class="col-auto d-flex align-items-center"><button class='btn btn-light mr-1 mb-1'> <span class="fas fa-share"></span> Partager</button></div>
+                  </div>
+                  <form class="d-flex align-items-center border-top border-200 pt-3">
+                    <div class="avatar avatar-xl">
+                      <img class="rounded-circle" src="../assets/img/team/user6.jpeg" alt="" />
+                    </div>
+                    <input class="form-control rounded-pill ml-2 fs--1" type="text" placeholder="Ecrire un commentaire..." />
+                  </form>
+                  <div class="d-flex mt-3">
+                    <div class="avatar avatar-xl">
+                      <img class="rounded-circle" src="../assets/img/team/user3.jpeg" alt="" />
+
+                    </div>
+                    <div class="flex-1 ml-2 fs--1">
+                      <p class="mb-1 bg-200 rounded-lg p-2"><a class="font-weight-semi-bold pres" href="../pages/profile.html">Rowan Atkinson</a> She starred as Jane Porter in The <a href="#!" class='pres'>@Legend of Tarzan (2016)</a>, Tanya Vanderpoel in Whiskey Tango Foxtrot (2016) and as DC comics villain Harley Quinn in Suicide Squad (2016), for which she was nominated for a Teen Choice Award, and many other awards.</p>
+                      <div class="px-2"><a href="#!" class='pres'>Aimer</a> &bull; <a href="#!" class='pres'>Répondre</a> &bull; 23min </div>
+                    </div>
+                  </div>
+                  <div class="d-flex mt-3">
+                    <div class="avatar avatar-xl">
+                      <img class="rounded-circle" src="../assets/img/team/user7.jpeg" alt="" />
+
+                    </div>
+                    <div class="flex-1 ml-2 fs--1">
+                      <p class="mb-1 bg-200 rounded-lg p-2"><a class="font-weight-semi-bold pres" href="../pages/profile.html">Jessalyn Gilsig</a> Jessalyn Sarah Gilsig is a Canadian-American actress known for her roles in television series, e.g., as Lauren Davis in Boston Public, Gina Russo in Nip/Tuck, Terri Schuester in Glee, and as Siggy Haraldson on the History Channel series Vikings. 🏆</p>
+                      <div class="px-2"><a href="#!" class='pres'>Aimer</a> &bull; <a href="#!" class='pres'>Répondre</a> &bull; 3hrs </div>
+                    </div>
+                  </div><a class="fs--1 text-700 d-inline-block mt-2 pres" href="#!">Lire plus de commentaires (2 of 34)</a>
+                </div>
+              </div>
+              <div class="card mb-3">
+                <div class="card-header bg-light">
+                  <div class="row justify-content-between">
+                    <div class="col">
+                      <div class="d-flex">
+                        <div class="avatar avatar-2xl">
+                          <img class="rounded-circle" src="../assets/img/team/user5.jpeg" alt="" />
+
+                        </div>
+                        <div class="flex-1 align-self-center ml-2">
+                          <p class="mb-1 lh-1"><a class="font-weight-semi-bold pres" href="../pages/profile.html">Margot Ndour</a></p>
+                          <p class="mb-0 fs--1">Hier &bull; Dalby &bull; <span class="fas fa-users"></span></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-auto">
+                      <div class="dropdown font-sans-serif">
+                        <button class="btn btn-sm dropdown-toggle p-1 dropdown-caret-none" type="button" id="post-article-action" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="fas fa-ellipsis-h fs--1"></span></button>
+                        <div class="dropdown-menu dropdown-menu-right py-3" aria-labelledby="post-article-action"><a class="dropdown-item" href="#!">View</a><a class="dropdown-item" href="#!">Edit</a><a class="dropdown-item" href="#!">Report</a>
+                          <div class="dropdown-divider"></div><a class="dropdown-item text-warning" href="#!">Archive</a><a class="dropdown-item text-danger" href="#!">Delete </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <p>Margot Elise Robbie was born on July 2, 1990 in Dalby, Queensland, Australia to Scottish parents. Her mother, Sarie Kessler, is a physiotherapist, and her father, is Doug Robbie. She comes from a family of four children, having two brothers and one sister. She graduated from Somerset College in Mudgeeraba, Queensland, Australia, a suburb in the Gold Coast hinterland of South East Queensland, where she and her siblings were raised by their mother and spent much of her time at the farm belonging to her grandparents. In her late teens, she moved to Melbourne, Victoria, Australia to pursue an acting career.</p>
+                  <p>From 2008-2010, Robbie played the character of Donna Freedman in the long-running Australian soap opera, Neighbours (1985), for which she was nominated for two Logie Awards. She set off to pursue Hollywood opportunities, quickly landing the role of Laura Cameron on the short-lived ABC series, Pan Am (2011). She made her big screen debut in the film, About Time (2013).</p>
+                  <p>Robbie rose to fame co-starring alongside Leonardo DiCaprio, portraying the role of Naomi Lapaglia in Martin Scorsese's Oscar-nominated film, The Wolf of Wall Street (2013). She was nominated for a Breakthrough Performance MTV Movie Award, and numerous other awards.</p>
+                  <p>In 2014, Robbie founded her own production company, LuckyChap Entertainment. She also appeared in the World War II romantic-drama film, Suite Française (2014). She starred in Focus (2015) and Z for Zachariah (2015), and made a cameo in The Big Short (2015).</p>
+                  <p>In 2016, she married Tom Ackerley in Byron Bay, New South Wales, Australia.</p>
+                  <p>She starred as Jane Porter in The Legend of Tarzan (2016), Tanya Vanderpoel in Whiskey Tango Foxtrot (2016) and as DC comics villain Harley Quinn in Suicide Squad (2016), for which she was nominated for a Teen Choice Award, and many other awards.</p>
+                  <p>She portrayed figure skater Tonya Harding in the biographical film I, Tonya (2017), receiving critical acclaim and a Golden Globe Award nomination for Best Actress - Motion Picture Comedy or Musical.</p>
+                </div>
+                <div class="card-footer bg-light pt-0">
+                  <div class="border-bottom border-200 fs--1 py-3"><a class="text-700" href="#!">34 Commentaires</a>
+                  </div>
+                  <div class="row g-0 font-weight-semi-bold text-center py-2 fs--1">
+                    <div class="col-auto"> <button class='btn btn-light mr-1 mb-1'> <span class="far fa-heart"></span> Aimer</button></div>
+                    <div class="col-auto"> <button class='btn btn-light mr-1 mb-1'> <span class="far fa-comment"></span> Commenter</button></div>
+                    <div class="col-auto d-flex align-items-center"><button class='btn btn-light mr-1 mb-1'> <span class="fas fa-share"></span> Partager</button></div>
+                  </div>
+                  <form class="d-flex align-items-center border-top border-200 pt-3">
+                    <div class="avatar avatar-xl">
+                      <img class="rounded-circle" src="../assets/img/team/user6.jpeg" alt="" />
+
+                    </div>
+                    <input class="form-control rounded-pill ml-2 fs--1" type="text" placeholder="Ecrire un commentaire..." />
+                  </form>
+                  <div class="d-flex mt-3">
+                    <div class="avatar avatar-xl">
+                      <img class="rounded-circle" src="../assets/img/team/user10.jpeg" alt="" />
+
+                    </div>
+                    <div class="flex-1 ml-2 fs--1">
+                      <p class="mb-1 bg-200 rounded-lg p-2"><a class="font-weight-semi-bold pres" href="../pages/profile.html">Rowan Atkinson</a> She starred as Jane Porter in The <a href="#!" class='pres'>@Legend of Tarzan (2016)</a>, Tanya Vanderpoel in Whiskey Tango Foxtrot (2016) and as DC comics villain Harley Quinn in Suicide Squad (2016), for which she was nominated for a Teen Choice Award, and many other awards.</p>
+                      <div class="px-2"><a href="#!" class='pres'>Aimer</a> &bull; <a href="#!" class='pres'>Répondre</a> &bull; 23min </div>
+                    </div>
+                  </div>
+                  <div class="d-flex mt-3">
+                    <div class="avatar avatar-xl">
+                      <img class="rounded-circle" src="../assets/img/team/user3.jpeg" alt="" />
+
+                    </div>
+                    <div class="flex-1 ml-2 fs--1">
+                      <p class="mb-1 bg-200 rounded-lg p-2"><a class="font-weight-semi-bold pres" href="../pages/profile.html">Jessalyn Gilsig</a> Jessalyn Sarah Gilsig is a Canadian-American actress known for her roles in television series, e.g., as Lauren Davis in Boston Public, Gina Russo in Nip/Tuck, Terri Schuester in Glee, and as Siggy Haraldson on the History Channel series Vikings. 🏆</p>
+                      <div class="px-2"><a href="#!" class='pres'>Aimer</a> &bull; <a href="#!" class='pres'>Répondre</a> &bull; 3hrs </div>
+                    </div>
+                  </div><a class="fs--1 text-700 d-inline-block mt-2" href="#!">Lire plus de commentaire (2 of 34)</a>
+                </div>
+              </div>
+              
+              <div class="card mb-3">
+                <div class="card-header bg-light">
+                  <div class="row justify-content-between">
+                    <div class="col">
+                      <div class="d-flex">
+                        <div class="avatar avatar-2xl">
+                          <img class="rounded-circle" src="../assets/img/team/user7.jpeg" alt="" />
+
+                        </div>
+                        <div class="flex-1 align-self-center ml-2">
+                          <p class="mb-1 lh-1"><a class="font-weight-semi-bold pres" href="../pages/profile.html">Momar Sall</a> a partagé une <a href="#!" class='pres'>photo</a></p>
+                          <p class="mb-0 fs--1">13 Jan &bull;Dakar &bull; <span class="fas fa-globe-americas"></span></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-auto">
+                      <div class="dropdown font-sans-serif">
+                        <button class="btn btn-sm dropdown-toggle p-1 dropdown-caret-none" type="button" id="post-image-action" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="fas fa-ellipsis-h fs--1"></span></button>
+                        <div class="dropdown-menu dropdown-menu-right py-3" aria-labelledby="post-image-action"><a class="dropdown-item" href="#!">View</a><a class="dropdown-item" href="#!">Edit</a><a class="dropdown-item" href="#!">Report</a>
+                          <div class="dropdown-divider"></div><a class="dropdown-item text-warning" href="#!">Archive</a><a class="dropdown-item text-danger" href="#!">Delete </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body overflow-hidden"><a href="../assets/img/gallery/Feed7.jpeg" data-gallery="gallery-2"><img class="img-fluid rounded" src="../assets/img/gallery/Feed7.jpeg" alt="" /></a></div>
+                <div class="card-footer bg-light pt-0">
+                  <div class="row g-0 font-weight-semi-bold text-center py-2 fs--1">
+                    <div class="col-auto"> <button class='btn btn-light mr-1 mb-1'> <span class="far fa-heart"></span> Aimer</button></div>
+                    <div class="col-auto"> <button class='btn btn-light mr-1 mb-1'> <span class="far fa-comment"></span> Commenter</button></div>
+                    <div class="col-auto d-flex align-items-center"><button class='btn btn-light mr-1 mb-1'> <span class="fas fa-share"></span> Partager</button></div>
+                  </div>
+                  <form class="d-flex align-items-center border-top border-200 pt-3">
+                    <div class="avatar avatar-xl">
+                      <img class="rounded-circle" src="../assets/img/team/user6.jpeg" alt="" />
+
+                    </div>
+                    <input class="form-control rounded-pill ml-2 fs--1" type="text" placeholder="Ecrire un commentaire..." />
+                  </form>
+                </div>
+              </div>
+              <div class="card mb-3">
+                <div class="card-header bg-light">
+                  <div class="row justify-content-between">
+                    <div class="col">
+                      <div class="d-flex">
+                        <div class="avatar avatar-2xl">
+                          <img class="rounded-circle" src="../assets/img/team/user10.jpeg" alt="" />
+
+                        </div>
+                        <div class="flex-1 align-self-center ml-2">
+                          <p class="mb-1 lh-1"><a class="font-weight-semi-bold pres" href="../pages/profile.html">Mouhamed Gueye</a> a partagé une <a href="#!" class="pres">video</a></p>
+                          <p class="mb-0 fs--1"> Maintenant &bull; Paris &bull; <span class="fas fa-users"></span></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-auto">
+                      <div class="dropdown font-sans-serif">
+                        <button class="btn btn-sm dropdown-toggle p-1 dropdown-caret-none" type="button" id="post-video-action" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="fas fa-ellipsis-h fs--1"></span></button>
+                        <div class="dropdown-menu dropdown-menu-right py-3" aria-labelledby="post-video-action"><a class="dropdown-item" href="#!">View</a><a class="dropdown-item" href="#!">Edit</a><a class="dropdown-item" href="#!">Report</a>
+                          <div class="dropdown-divider"></div><a class="dropdown-item text-warning" href="#!">Archive</a><a class="dropdown-item text-danger" href="#!">Delete </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <p>Pour le plaisir de partager 🤩 🌎 🎬</p>
+                  <div>
+                    <div class="player" data-plyr-provider="youtube" data-plyr-embed-id="bTqVqk7FSmY"></div>
+                  </div>
+                </div>
+                <div class="card-footer bg-light pt-0">
+                  <div class="row g-0 font-weight-semi-bold text-center py-2 fs--1">
+                    <div class="col-auto"> <button class='btn btn-light mr-1 mb-1'> <span class="far fa-heart"></span> Aimer</button></div>
+                    <div class="col-auto"> <button class='btn btn-light mr-1 mb-1'> <span class="far fa-comment"></span> Commenter</button></div>
+                    <div class="col-auto d-flex align-items-center"><button class='btn btn-light mr-1 mb-1'> <span class="fas fa-share"></span> Partager</button></div>
+                  </div>
+                  <form class="d-flex align-items-center border-top border-200 pt-3">
+                    <div class="avatar avatar-xl">
+                      <img class="rounded-circle" src="../assets/img/team/user6.jpeg" alt="" />
+
+                    </div>
+                    <input class="form-control rounded-pill ml-2 fs--1" type="text" placeholder="Ecrire un commentaire..." />
+                  </form>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header bg-light">
+                  <div class="row justify-content-between">
+                    <div class="col">
+                      <div class="d-flex">
+                        <div class="avatar avatar-2xl status-online">
+                          <img class="rounded-circle" src="../assets/img/team/Mentor1.jpg" alt="" />
+
+                        </div>
+                        <div class="flex-1 align-self-center ml-2">
+                          <p class="mb-1 lh-1"><a class="font-weight-semi-bold pres" href="../pages/profile.html">Penda Soumaré</a> a partagé une <a href="#!" class='pres'>url</a></p>
+                          <p class="mb-0 fs--1">14 Feb &bull; Thies &bull; <span class="fas fa-globe-americas"></span></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-auto">
+                      <div class="dropdown font-sans-serif">
+                        <button class="btn btn-sm dropdown-toggle p-1 dropdown-caret-none" type="button" id="post-url-action" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="fas fa-ellipsis-h fs--1"></span></button>
+                        <div class="dropdown-menu dropdown-menu-right py-3" aria-labelledby="post-url-action"><a class="dropdown-item" href="#!">View</a><a class="dropdown-item" href="#!">Edit</a><a class="dropdown-item" href="#!">Report</a>
+                          <div class="dropdown-divider"></div><a class="dropdown-item text-warning" href="#!">Archive</a><a class="dropdown-item text-danger" href="#!">Delete </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body overflow-hidden">
+                  <a class="text-decoration-none" href="#!"><img class="img-fluid rounded" src="../assets/img/gallery/Feed5.jpeg" alt="" /><small class="text-uppercase text-700">lixew.sn</small>
+                    <h6 class="fs-0 mb-0">Quelle solution pour les embouteillages?</h6>
+                    <p class="fs--1 mb-0 text-700">La circulation à Dakar, le calvaire de ses citadins....</p>
+                  </a>
+                </div>
+                <div class="card-footer bg-light pt-0">
+                  <div class="border-bottom border-200 fs--1 py-3"><a class="text-700" href="#!">345 J'aimes</a>
+                  </div>
+                  <div class="row g-0 font-weight-semi-bold text-center py-2 fs--1">
+                    <div class="col-auto"> <button class='btn btn-light mr-1 mb-1'> <span class="far fa-heart"></span> Aimer</button></div>
+                    <div class="col-auto"> <button class='btn btn-light mr-1 mb-1'> <span class="far fa-comment"></span> Commenter</button></div>
+                    <div class="col-auto d-flex align-items-center"><button class='btn btn-light mr-1 mb-1'> <span class="fas fa-share"></span> Partager</button></div>
+                  </div>
+                  <form class="d-flex align-items-center border-top border-200 pt-3">
+                    <div class="avatar avatar-xl">
+                      <img class="rounded-circle" src="../assets/img/team/user6.jpeg" alt="" />
+
+                    </div>
+                    <input class="form-control rounded-pill ml-2 fs--1" type="text" placeholder="Ecrire un commentaire..." />
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 pl-lg-2">
+              <div class="card mb-3">
+                <div class="card-header bg-light d-flex justify-content-between align-items-center">
+                  <h5 class="mb-0">Ajouter</h5><a class="fs--1 pres" href="#!">Voir tous</a>
+                </div>
+                <div class="card-body">
+                  <div class="d-flex">
+                    <div class="avatar avatar-3xl">
+                      <img class="rounded-circle" src="../assets/img/team/user1.jpeg" alt="" />
+
+                    </div>
+                    <div class="flex-1 ml-2">
+                      <h6 class="mb-0"><a href="../pages/profile.html" class='pres'>Saphia Bâ</a></h6>
+                      <button class="btn btn-light btn-sm py-0 mt-1 border shadow-none" type="button"><span class="fas fa-user-plus" data-fa-transform="shrink-5 left-2"></span><span class="fs--1">Ajouter</span></button>
+                      <div class="border-dashed-bottom my-3"></div>
+                    </div>
+                  </div>
+                  <div class="d-flex">
+                    <div class="avatar avatar-3xl">
+                      <img class="rounded-circle" src="../assets/img/team/user8.jpeg" alt="" />
+
+                    </div>
+                    <div class="flex-1 ml-2">
+                      <h6 class="mb-0"><a href="../pages/profile.html" class='pres'>Ngor Diegane</a></h6>
+                      <button class="btn btn-light btn-sm py-0 mt-1 border shadow-none" type="button"><span class="fas fa-user-plus" data-fa-transform="shrink-5 left-2"></span><span class="fs--1">Ajouter</span></button>
+                      <div class="border-dashed-bottom my-3"></div>
+                    </div>
+                  </div>
+                  <div class="d-flex">
+                    <div class="avatar avatar-3xl">
+                      <img class="rounded-circle" src="../assets/img/team/user10.jpeg" alt="" />
+
+                    </div>
+                    <div class="flex-1 ml-2">
+                      <h6 class="mb-0"><a href="../pages/profile.html" class='pres'>Khalil Fall</a></h6>
+                      <button class="btn btn-light btn-sm py-0 mt-1 border shadow-none" type="button"><span class="fas fa-user-plus" data-fa-transform="shrink-5 left-2"></span><span class="fs--1">Ajouter</span></button>
+                      <div class="border-dashed-bottom my-3"></div>
+                    </div>
+                  </div>
+                  <div class="d-flex">
+                    <div class="avatar avatar-3xl">
+                      <img class="rounded-circle" src="../assets/img/team/user2.jpeg" alt="" />
+
+                    </div>
+                    <div class="flex-1 ml-2">
+                      <h6 class="mb-0"><a href="../pages/profile.html" class='pres'>Saly Deme</a></h6>
+                      <button class="btn btn-light btn-sm py-0 mt-1 border shadow-none" type="button"><span class="fas fa-user-plus" data-fa-transform="shrink-5 left-2"></span><span class="fs--1">Ajouter</span></button>
+                      <div class="border-dashed-bottom my-3"></div>
+                    </div>
+                  </div>
+                  <div class="d-flex">
+                    <div class="avatar avatar-3xl">
+                      <img class="rounded-circle" src="../assets/img/team/Mentor8.jpeg" alt="" />
+
+                    </div>
+                    <div class="flex-1 ml-2">
+                      <h6 class="mb-0"><a href="../pages/profile.html" class='pres'>Fatou Coly</a></h6>
+                      <button class="btn btn-light btn-sm py-0 mt-1 border shadow-none" type="button"><span class="fas fa-user-plus" data-fa-transform="shrink-5 left-2"></span><span class="fs--1">Ajouter</span></button>
+                      <div class="border-dashed-bottom my-3"></div>
+                    </div>
+                  </div>
+                  <div class="d-flex">
+                    <div class="avatar avatar-3xl">
+                      <img class="rounded-circle" src="../assets/img/team/user9.jpeg" alt="" />
+
+                    </div>
+                    <div class="flex-1 ml-2">
+                      <h6 class="mb-0"><a href="../pages/profile.html" class='pres'>Isaac Ndiaye</a></h6>
+                      <button class="btn btn-light btn-sm py-0 mt-1 border shadow-none" type="button"><span class="fas fa-user-plus" data-fa-transform="shrink-5 left-2"></span><span class="fs--1">Ajouter</span></button>
+                      <div class="border-dashed-bottom my-3"></div>
+                    </div>
+                  </div>
+                  <div class="d-flex">
+                    <div class="avatar avatar-3xl">
+                      <img class="rounded-circle" src="../assets/img/team/user3.jpeg" alt="" />
+
+                    </div>
+                    <div class="flex-1 ml-2">
+                      <h6 class="mb-0"><a href="../pages/profile.html" class='pres'>Khadija Diallo</a></h6>
+                      <button class="btn btn-light btn-sm py-0 mt-1 border shadow-none" type="button"><span class="fas fa-user-plus" data-fa-transform="shrink-5 left-2"></span><span class="fs--1">Ajouter</span></button>
+                      <div class="border-dashed-bottom my-3"></div>
+                    </div>
+                  </div>
+                  <div class="d-flex">
+                    <div class="avatar avatar-3xl">
+                      <img class="rounded-circle" src="../assets/img/team/user5.jpeg" alt="" />
+
+                    </div>
+                    <div class="flex-1 ml-2">
+                      <h6 class="mb-0"><a href="../pages/profile.html" class='pres'>Fatima Leye</a></h6>
+                      <button class="btn btn-light btn-sm py-0 mt-1 border shadow-none" type="button"><span class="fas fa-user-plus" data-fa-transform="shrink-5 left-2"></span><span class="fs--1">Ajouter</span></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-3 mb-lg-0">
+                <div class="card-header bg-light">
+                  <h5 class="mb-0">Vous serez peut-être intéressé(e)</h5>
+                </div>
+                <div class="card-body fs--1">
+                  <div class="d-flex btn-reveal-trigger">
+                    <div class="calendar"><span class="calendar-month">Feb</span><span class="calendar-day">21</span></div>
+                    <div class="flex-1 position-relative pl-3">
+                      <h6 class="fs-0 mb-0"><a href="../pages/event-detail.html" class='pres'>Salon professionnel</a></h6>
+                      <p class="mb-1">Organisé par <a href="#!" class="text-700">SAM_Tech</a></p>
+                      <p class="text-1000 mb-0">Time: 6:00AM</p>
+                      <p class="text-1000 mb-0">Duration: 6:00AM - 5:00PM</p>Place: King Fahd Palace
+                      <div class="border-dashed-bottom my-3"></div> 
+                    </div>
+                  </div>
+                  <div class="d-flex btn-reveal-trigger">
+                    <div class="calendar"><span class="calendar-month">Dec</span><span class="calendar-day">31</span></div>
+                    <div class="flex-1 position-relative pl-3">
+                      <h6 class="fs-0 mb-0"><a href="../pages/event-detail.html" class='pres'>MasterClass sur l'IA</a></h6>
+                      <p class="mb-1">Organisé par <a href="#!" class="text-700">HKJ</a></p>
+                      <p class="text-1000 mb-0">Time: 11:00PM</p>
+                      <p class="text-1000 mb-0">280 people interested</p>Place: Meet
+                      <div class="border-dashed-bottom my-3"></div>
+                    </div>
+                  </div>
+                  <div class="d-flex btn-reveal-trigger">
+                    <div class="calendar"><span class="calendar-month">Dec</span><span class="calendar-day">16</span></div>
+                    <div class="flex-1 position-relative pl-3">
+                      <h6 class="fs-0 mb-0"><a href="../pages/event-detail.html" class='pres'>Foire agricole</a></h6>
+                      <p class="mb-1">Organisé par <a href="#!" class="text-700">Agri-SN</a></p>
+                      <p class="text-1000 mb-0">Time: 9:00AM</p>
+                      <p class="text-1000 mb-0">Location: Foire
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer bg-light p-0 border-top"><a class="btn btn-link btn-block pres" href="../pages/events.html">Tous les événements<span class="fas fa-chevron-right ml-1 fs--2"></span></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+      </div>
+    </main>
+    <!-- ===============================================-->
+    <!--    End of Main Content-->
+    <!-- ===============================================-->
+
+
+
+
+    <!-- ===============================================-->
+    <!--    JavaScripts-->
+    <!-- ===============================================-->
+    <script src="../vendors/popper/popper.min.js"></script>
+    <script src="../vendors/bootstrap/bootstrap.min.js"></script>
+    <script src="../vendors/anchorjs/anchor.min.js"></script>
+    <script src="../vendors/is/is.min.js"></script>
+    <script src="../vendors/glightbox/glightbox.min.js"></script>
+    <script src="../vendors/plyr/plyr.polyfilled.min.js"></script>
+    <script src="../vendors/fontawesome/all.min.js"></script>
+    <script src="../vendors/lodash/lodash.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+    <script src="../vendors/list.js/list.min.js"></script>
+    <script src="../assets/js/theme.js"></script>
+    <script src="../vendors/choices/choices.min.js"></script>
+
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700%7cPoppins:100,200,300,400,500,600,700,800,900&amp;display=swap" rel="stylesheet">
+  </body>
+
+</html>

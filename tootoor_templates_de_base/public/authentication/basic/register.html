@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr-FR" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- ===============================================-->
+    <!--    Document Title-->
+    <!-- ===============================================-->
+    <title>ToorToor | Inscription &amp; Plateforme de mentoring</title>
+
+    <!-- ===============================================-->
+    <!--    Favicons-->
+    <!-- ===============================================-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../../assets/img/favicons/toortoor_logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/img/favicons/toortoor_logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/img/favicons/toortoor_logo.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../../assets/img/favicons/toortoor_logo.ico">
+    <link rel="manifest" href="../../assets/img/favicons/manifest.json">
+    <meta name="msapplication-TileImage" content="../../assets/img/favicons/toortoor_logo.png">
+    <meta name="theme-color" content="#ffffff">
+    <script src="../../assets/js/config.navbar-vertical.js"></script>
+
+
+    <!-- ===============================================-->
+    <!--    Stylesheets-->
+    <!-- ===============================================-->
+    <link href="../../assets/css/theme.css" rel="stylesheet" />
+
+  </head>
+
+
+  <body>
+
+    <!-- ===============================================-->
+    <!--    Main Content-->
+    <!-- ===============================================-->
+    <main class="main" id="top">
+      <div class="container">
+        <div class="row flex-center min-vh-100 py-6">
+          <div class="col-sm-10 col-md-8 col-lg-6 col-xl-5 col-xxl-4"><a class="d-flex flex-center mb-4" href="../../index.html"><img class="mr-2" src="../../assets/img/favicons/toortoor_logo.png" alt="" width="150" /></a>
+            <div class="card">
+              <div class="card-body p-4 p-sm-5">
+                <div class="row flex-between-center mb-2">
+                  <div class="col-auto">
+                    <h5>S'inscrire</h5>
+                  </div>
+                  <div class="col-auto fs--1 text-600"><span class="mb-0 undefined">Vous avez un compte?</span> <span><a class='link-warning' href="../../authentication/basic/login.html">Se connecter</a></span></div>
+                </div>
+                <form>
+                  <div class="mb-3">
+                    <input class="form-control" type="email" placeholder="Adresse e-mail" />
+                  </div>
+                  <div class="mb-3">
+                        <select class="form-select" aria-label="profil" aria-placeholder="profil" id='mentor'>
+                          <option value="">Sélectionnez votre profil</option>
+                          <option value="mentore">Mentoré</option>
+                          <option value="mentor">Mentor</option>
+                          <option value="professionnel">Professionnel</option>
+                        </select>
+                  </div>
+                  
+                  <div class="row gx-3">
+                    <div class="mb-3">
+                      <input class="form-control" type="password" placeholder="Mot de passe" />
+                    </div>
+                    <div class="mb-3">
+                      <input class="form-control" type="password" placeholder="Confirmer" />
+                    </div>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input bg-warning" type="checkbox" id="basic-register-checkbox" />
+                    <label class="form-label" for="basic-register-checkbox">J'acceptes les <a class='link-warning' href="#!">conditions </a>et <a class='link-warning' href="#!">politiques privées</a></label>
+                  </div>
+                  <div class="mb-3">
+                    <button class="btn btn-warning btn-block mt-3" type="submit" name="submit">S'inscrire</button>
+                  </div>
+                  <div class= 'mb-3' style='display: none;' id="card_mentor">
+                    <p> <Strong class="text-danger">Note</Strong> Votre compte sera étudiée après soumission
+                      par l'équipe de Toortoor, et vous recevrez un e-mail vous
+                      confirmant son activation. Nous vous remercions de 
+                      l'intérêt que vous portez à notre jeunesse.</p>
+                  </div>
+                </form>
+                <div class="position-relative mt-4">
+                  <hr class="bg-300" />
+                  <div class="position-absolute top-50 left-50 translate-middle px-3 bg-white font-sans-serif fs--1 text-500 text-nowrap">ou inscrivez-vous avec</div>
+                </div>
+                <div class="row g-2 mt-2">
+                  <div class="col-sm-6"><a class="btn btn-outline-google-plus btn-sm btn-block" href="#"><span class="fab fa-google-plus-g mr-2" data-fa-transform="grow-8"></span> Google</a></div>
+                  <div class="col-sm-6"><a class="btn btn-outline-facebook btn-sm btn-block" href="#"><span class="fab fa-facebook-square mr-2" data-fa-transform="grow-8"></span> facebook</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- ===============================================-->
+    <!--    End of Main Content-->
+    <!-- ===============================================-->
+
+
+
+
+    <!-- ===============================================-->
+    <!--    JavaScripts-->
+    <!-- ===============================================-->
+    <script src="../../vendors/popper/popper.min.js"></script>
+    <script src="../../vendors/bootstrap/bootstrap.min.js"></script>
+    <script src="../../vendors/anchorjs/anchor.min.js"></script>
+    <script src="../../vendors/is/is.min.js"></script>
+    <script src="../../vendors/fontawesome/all.min.js"></script>
+    <script src="../../vendors/lodash/lodash.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+    <script src="../../vendors/list.js/list.min.js"></script>
+    <script src="../../assets/js/theme.js"></script>
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+
+    <script src="../../assets/js/hide_show.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700%7cPoppins:100,200,300,400,500,600,700,800,900&amp;display=swap" rel="stylesheet">
+  </body>
+
+</html>

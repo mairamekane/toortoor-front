@@ -1,0 +1,86 @@
+extends ../layouts/LayoutComponent
+include ../mixins/components/Modals
+
+append variables
+  - var firstParent = 'components'              
+  - var currentPage = 'modals'
+  -
+    var pageHeader = {
+      title: 'Modals',
+      description: "List groups are a flexible and powerful component for displaying a series of content. Modify and extend them to support just about any content within.",
+      url: `https://v5.getbootstrap.com/docs/${bootstrapVersion}/components/modal/`,
+      linkText: 'Modal on Bootstrap'
+    }
+
+block component
+  +PageHeader(pageHeader)
+
+  .card.mb-3
+    .card-header
+      +DocCardHeader('Example')
+    .card-body.bg-light
+      +ModalExampleDemo
+      +componentCardLib
+        #error-modal.modal.fade(tabindex='-1' role='dialog' aria-hidden='true')
+        .modal-dialog.modal-dialog-centered(role="document" style="max-width: 500px")
+          .modal-content.position-relative
+            .position-absolute.top-0.right-0.mt-2.mr-2.z-index-1
+              button.btn-close.btn.btn-sm.btn-circle.d-flex.flex-center.transition-base(data-dismiss='modal' aria-label='Close')
+            .modal-body.p-0
+              p The Modal plugin is a dialog box/popup window that is displayed on top of the current page 
+            .modal-footer
+              button.btn.btn-secondary(type='button' data-dismiss='modal') Close
+              button.btn.btn-primary(type='button') Understood        
+  .card.mb-3
+    .card-header
+      +DocCardHeader('Static backdrop')
+        p.mb-0.mt-2 When backdrop is set to static, the modal will not close when clicking outside it. Click the button below to try it.
+    .card-body.bg-light
+      +StaticBackdrop
+      +componentCardLib
+        #staticBackdropLabelExample.modal.fade(data-keyboard="false" data-backdrop="static" tabindex="-1" aria-labelledby="staticBackdropLabelExample" aria-hidden="true" )
+          .modal-dialog.modal-lg.mt-6(role='document')
+            .modal-content.border-0
+              .position-absolute.top-0.right-0.mt-3.mr-3.z-index-1
+                button.btn-close.btn.btn-sm.btn-circle.d-flex.flex-center.transition-base(data-dismiss='modal' aria-label='Close')
+
+  .card.mb-3
+    .card-header
+      +DocCardHeader('Tooltips and popovers')
+        p.mb-0.mt-2 
+          a(href=`${CWD}components/tooltips.html`) Tooltips
+          |  and 
+          a(href=`${CWD}components/popovers.html`) popovers 
+          |can be placed within modals as needed. When modals are closed, any tooltips and popovers within are also automatically dismissed.
+    .card-body.bg-light
+      +TooltipsPopovers
+      +componentCardLib
+        .row
+          .col      
+            h5 Popover in a modal
+            p
+              | This 
+              a.btn.btn-secondary.popover-test(href='#' role='button' title='Popover title' data-toggle="popover" data-placement="top" data-content='Popover body content is set in this attribute.') button
+              |  triggers a popover on click.
+            h5 Tooltips in a modal
+            p
+              a.tooltip-test(href='#' data-toggle="tooltip" data-placement="top" title='Tooltip' data) This link
+              |  and 
+              a.tooltip-test(href='#' data-toggle="tooltip" data-placement="top" title='Tooltip') that link
+              |  have tooltips on hover.
+
+  .card.mb-3
+    .card-header
+      +DocCardHeader('Scrolling long content')
+        p.mb-0.mt-2 When modals become too long for the user’s viewport or device, they scroll independent of the page itself. Try the demo below to see what we mean.
+    .card-body.bg-light
+      +ScrollingLongContent
+      +componentCardLib
+        #scrollinglongcontent.modal.fade( data-keyboard='false' tabindex='-1' aria-labelledby='scrollinglongcontentLabel' aria-hidden='true')
+          .modal-dialog
+            .modal-content
+              .modal-header
+                h5#scrollinglongcontentLabel.modal-title Modal title
+                button.btn-close(type='button' data-dismiss='modal' aria-label='Close')
+              .modal-body.modal-dialog.modal-dialog-scrollable.mt-0
+                p Cras mattis consectetur purus sit amet fermentum....

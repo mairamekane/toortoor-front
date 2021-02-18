@@ -1,0 +1,17 @@
+extends ../../layouts/LayoutTheme
+include ../../mixins/common/PageHeader
+include ../../mixins/faq/FaqBasic
+
+append variables
+  - var CWD = '../../'
+  - var firstParent = 'pages'              
+  - var secondParent = 'faq'              
+  - var currentPage = 'faq-basic'
+
+append content
+  +PageHeader({
+    title: 'Frequently Asked Questions',
+    description: `Below you'll find answers to the questions we get <br class='d-none.d-sm-block' /> asked the most about to join with ${name}`
+  })
+
+  +FaqBasic

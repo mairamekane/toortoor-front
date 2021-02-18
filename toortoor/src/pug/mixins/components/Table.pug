@@ -1,0 +1,44 @@
+mixin TableBasicExampleDescription 
+  p&attributes(attributes) Using the most basic table markup, here’s how 
+    code .table
+    |  based tables look in Bootstrap.
+
+mixin TableVariantsDescription
+  p&attributes(attributes) Use contextual classes to color tables, table rows or individual cells. Here example of 
+    code table-info 
+
+mixin TableDarkExampleDescription 
+  p&attributes(attributes) Using the most basic table markup, here’s how 
+    code .table-dark
+    |  based tables look in Bootstrap.
+
+mixin Table(config)
+  table.table&attributes(attributes)
+    thead
+      tr
+        th(scope='col') #
+        th(scope='col') First
+        th(scope='col') Last
+        th(scope='col') Handle
+    tbody
+      tr
+        th(scope='row') 1
+        td Steven
+        td Speilberg
+        td @mdo
+      tr
+        th(scope='row') 2
+        td Martin
+        td Scorsese
+        td @fat
+      tr
+        th(scope='row') 3
+        td James
+        td Cameron
+        td @twitter
+      tr 
+        th(scope='row') 4
+        td John
+        td Doe
+        td @twitter
+

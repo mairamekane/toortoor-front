@@ -1,0 +1,19 @@
+extends ../layouts/LayoutComponent
+include ../mixins/common/CookieNotice
+
+append variables
+  - var firstParent = 'components'              
+  - var currentPage = 'cookie-notice'
+
+append content
+  +PageHeader({ title: 'Cookie Notice' })
+    p.mt-2 #{name} has a built-in notification component that allows users to notify cookie uses on the website.
+    a(href='#cookie-notice' data-toggle="notice").btn.btn-link.pl-0.btn-sm  Toggle Notification
+      span.fas.fa-chevron-right.ml-1.fs--2
+  +CookieNoticeStructure
+  +CookieNoticeOptions
+  
+append afterContent
+  +CookieNotice
+
+
